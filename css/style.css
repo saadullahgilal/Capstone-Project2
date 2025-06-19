@@ -1,0 +1,327 @@
+/* Hero Section */
+
+.hero-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.name-head {
+    font-family: "Sacramento", cursive;
+    font-size: 6em;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.programmer{
+    color: #fff;
+    margin: 0;
+    font-size: 2.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+/* Profile Section */
+
+.profile-wrapper {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: fill;
+    border: 3px solid black;
+}
+
+.profile-head {
+    font-size: 2.7em;
+    font-family: "PT Serif", serif;
+    font-style: italic;
+}
+
+.profile-p {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    width: 70%;
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    background: #000;
+    width: 20%;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+
+/* Skills Section */
+
+.skills-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 20px;
+}
+
+.skills-con p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2em;
+    
+}
+
+.skills-img {
+    height: 200px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.skills-head {
+    font-size: 2.7em;
+    font-family: "PT Serif", serif;
+    text-align: center;
+}
+
+.core-skills-head {
+    font-family: "PT Serif", serif;
+    font-size: 1.7em;
+}
+
+/* Contact Section */
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-head {
+    font-size: 3em;
+    font-family: "PT Serif", serif;
+    margin-bottom: 0;
+}
+
+.contact-sub-head {
+    font-size: 1.3em;
+    margin: 25px 0;
+    font-family: "PT Serif", serif;
+    font-style: italic;
+}
+
+.contact-p {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 5px 0;
+    width: 70%;
+    text-align: center;
+}
+
+.contact-btn {
+    margin: 25px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    font-family: "PT Serif", serif;
+    background-color: #254D70;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.contact-btn:hover {
+    background-color: #0d304e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+.footer-wrapper {
+    height: 170px;
+    background-color: #254D70;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.links {
+    color: #2488e0;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.links:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.footer-p {
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 720px) {
+
+    /* Hero Section */
+    .name-head {
+        font-size: 4em;
+    }
+
+    .programmer{
+        font-size: 2em;
+    }
+
+    /* Profile Section */
+
+    .profile-wrapper {
+        margin: 35px;
+    }
+
+    .profile-head {
+        font-size: 2em;
+    }
+
+    .profile-p {
+        font-size: 1.3em;
+        width: 80%;
+    }
+
+    hr {
+        width: 30%;
+    }
+
+    /* Skills Section */
+    
+    .skills-con {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .skills-con p {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 1.1em;
+        text-align: center;
+        
+    }
+
+    .skills-img {
+        height: 220px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+
+    .core-skills-head {
+        font-family: "PT Serif", serif;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* Contact Section */
+    .contact-head {
+        font-size: 2.5em;
+    }
+
+    .contact-sub-head {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .contact-p {
+        font-size: 1.1em;
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact-btn {
+        margin: 25px 0;
+        padding: 10px;
+        border-radius: 10px;
+        width: 150px;
+        font-family: "PT Serif", serif;
+        background-color: #254D70;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .contact-btn:hover {
+        background-color: #0d304e;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Footer Section */
+
+    .footer-p {
+        text-align: center;
+        width: 90%;
+    }
+
+}
